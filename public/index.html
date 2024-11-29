@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & Actor Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="card">
+                <h2><i class="fas fa-user-circle"></i> Add New Actor</h2>
+                <form id="actorForm">
+                    <input type="text" id="actorName" placeholder="Actor Name" required>
+                    <input type="date" id="actorBirthDate">
+                    <button type="submit">Add Actor <i class="fas fa-plus"></i></button>
+                </form>
+            </div>
+            
+            <div class="card list-card">
+                <h3><i class="fas fa-list"></i> Added Actors</h3>
+                <div id="actorsList" class="list-container"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <h2><i class="fas fa-film"></i> Add New Movie</h2>
+                <form id="movieForm">
+                    <input type="text" id="movieTitle" placeholder="Movie Title" required>
+                    <input type="number" id="releaseYear" placeholder="Release Year">
+                    <button type="submit">Add Movie <i class="fas fa-plus"></i></button>
+                </form>
+            </div>
+
+            <div class="card list-card">
+                <h3><i class="fas fa-list"></i> Added Movies</h3>
+                <div id="moviesList" class="list-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
